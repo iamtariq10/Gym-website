@@ -11,25 +11,99 @@
     flex-direction: row;
     background-color: red;
     justify-content: space-between;
+    height: auto;
+    background: rgb(244,104,65);
+background: linear-gradient(90deg, rgba(244,104,65,1) 19%, rgba(255,179,91,1) 81%);
 }
 
 .gym-logo img{
-    width: 100px;
+    width: 80px;
+    height:auto;
+    margin-left: 1rem;
+    
 
 }
 .nav-links{
-    margin-right: 60rem;
+    margin-right: 52rem;
+    margin-left: .6rem;
 }
 .nav-links ul li {
     display:inline-block;
-    border: 1px solid wheat;
-    margin-top: 1.2rem;
+    /* border: 1px solid wheat; */
+    margin-top: 1rem;
     padding: 12px 10px;
-
+    cursor: pointer;
+    margin-right: 2px;
+    border-radius: 3px;
+    
+    /* background:radial-gradient(rgb(100, 100, 148),rgb(105, 110, 179)); */
+    
    
 
 }
 .nav-links ul li a{
     text-decoration: none;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 3px black;
+    font-size: 19px;
+    
+    
+    
+    
+    
+
+}
+.nav-links ul li a:hover{
+    color: rgb(109, 108, 108);
+    text-shadow: none;
+    transition: all 0.3s ease;
+    
+}
+
+.join-btn{
+    border: none;
+    padding: 12px 23px;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    color: white;
+    text-overflow: 1px 1px 3px black;
+    font-size: 16px;
+    background-color: rgb(126, 126, 231);
+    
+}
+.join-btn:hover{
+    transform: scale(1.03);
+    transition: all 0.1s ease;
+}
+
+
+.showcase{
+    background-image: url(./Images/showcase.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.showcase-content{
+    color: white;
+    text-align: center;
+    height: 900px;
+    
+}
+
+.showcase-content h1{
+    font-size: 5rem;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 3px black;
+    padding-top: 50px;
+}
+.showcase-content span{
+    color: rgba(244,104,65,1);
+    
+}
+
+.showcase-content p{
+    text-shadow: 2px 2px 3px black;
+    margin: 20px;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 200px;
 }
